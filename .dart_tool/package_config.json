@@ -68,12 +68,6 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "flutter_lints",
-      "rootUri": "file:///Users/soat_p/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.19"
-    },
-    {
       "name": "flutter_test",
       "rootUri": "file:///Users/soat_p/Library/FlutterBase/flutter3.13.1/packages/flutter_test",
       "packageUri": "lib/",
@@ -82,12 +76,6 @@
     {
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/soat_p/Library/FlutterBase/flutter3.13.1/packages/flutter_web_plugins",
-      "packageUri": "lib/",
-      "languageVersion": "3.0"
-    },
-    {
-      "name": "lints",
-      "rootUri": "file:///Users/soat_p/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -194,7 +182,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2024-07-08T10:22:25.411726Z",
+  "generated": "2024-07-08T10:27:32.931517Z",
   "generator": "pub",
   "generatorVersion": "3.1.0"
 }
