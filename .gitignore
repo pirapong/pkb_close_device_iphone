@@ -1,4 +1,4 @@
-# Miscellaneous
+# ————— Miscellaneous —————
 *.class
 *.log
 *.pyc
@@ -12,22 +12,37 @@
 .swiftpm/
 migrate_working_dir/
 
-# IntelliJ related
+# ————— IntelliJ / Android Studio —————
+# ignore ทั้งโฟลเดอร์ .idea และไฟล์ .iml ปกติ
 *.iml
 *.ipr
 *.iws
-.idea/
+.idea/*
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# แต่ยกเว้นไฟล์ config ที่ต้องการเก็บไว้
+!.idea/libraries/
+!.idea/libraries/Dart_SDK.xml
+!.idea/libraries/Flutter_Plugins.xml
+!.idea/modules.xml
+!.idea/pkb_close_device_iphone.iml
+!.idea/vcs.xml
 
-# Flutter/Dart/Pub related
-# Libraries should not include pubspec.lock, per https://dart.dev/guides/libraries/private-files#pubspeclock.
-/pubspec.lock
+# ยกเว้น .iml เฉพาะไฟล์โปรเจกต์
+!pkb_close_device_iphone.iml
+
+# ————— VS Code (ถ้าต้องการ) —————
+# .vscode/
+
+# ————— Flutter / Dart / Pub —————
+# ignore build artifacts, generated docs, และโฟลเดอร์ .dart_tool
+build/
 **/doc/api/
-.dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
-build/
+.dart_tool/*
+
+# แต่ยกเว้นไฟล์ package_config.json
+!.dart_tool/package_config.json
+
+# ให้ Git ติดตาม pubspec.lock เสมอ
+!/pubspec.lock
