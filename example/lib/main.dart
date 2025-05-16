@@ -25,10 +25,10 @@ class _MyAppState extends State<MyApp> {
         jsonEncode(await pkbGetDevice.checkDevice()))['type'];
     var group = jsonDecode(
         jsonEncode(await pkbGetDevice.checkDevice()))['group'];
-    if(type == "iPhone" && int.parse(group)  < 10){
-      txt4 = 'ระบบไม่รองรับ '  + name + ' รุ่นนี้แล้ว โปรดเปลี่ยนมือถือใหม่';
-    }else if(type == "iPhone" && int.parse(group)  < 14){
-      txt4 = 'ระบบไม่รองรับ '  + name + ' รุ่นนี้แล้ว โปรดเปลี่ยนมือถือใหม่';
+    if(type == "iPhone" && int.parse(group)  <= 10){
+      txt4 = 'ระบบไม่รองรับ '  + name + ' รุ่นนี้แล้ว ';
+    }else if(type == "iPad" && int.parse(group)  <= 10){
+      txt4 = 'ระบบไม่รองรับ '  + name + ' รุ่นนี้แล้ว ';
     }else{
       txt4 = 'รองรับ';
     }

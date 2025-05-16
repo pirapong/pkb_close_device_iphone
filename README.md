@@ -1,5 +1,5 @@
 # PKB No Screenshots
-    Flutter plugin check device iPhone
+    Flutter plugin check device iPhone&iPad
 
 
 ## Usage

@@ -1,6 +1,6 @@
-# example
+# pkb_close_device_iphone_example
 
-A new Flutter project.
+Demonstrates how to use the pkb_close_device_iphone plugin.
 
 ## Getting Started
 

@@ -1,3 +1,12 @@
+//
+// import 'pkb_close_device_iphone_platform_interface.dart';
+//
+// class PkbCloseDeviceIphone {
+//   Future<String?> getPlatformVersion() {
+//     return PkbCloseDeviceIphonePlatform.instance.getPlatformVersion();
+//   }
+// }
+
 library pkb_close_device_iphone;
 
 import 'dart:io';
@@ -12,7 +21,7 @@ class pkbGetDevice {
     if (Platform.isIOS) {
       IosDeviceInfo iosInfo = await device.iosInfo;
       var deviceMachine =
-          await pkbCheckDevice(iosInfo.utsname.machine.toLowerCase());
+      await pkbCheckDevice(iosInfo.utsname.machine.toLowerCase());
       print(deviceMachine);
       return deviceMachine;
     }
